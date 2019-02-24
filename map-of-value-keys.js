@@ -26,6 +26,13 @@ class MapOfValueKeys extends Map {
   retainOrginalReferences() {
     this.originalReferences = new Map();
   }
+  jsonObj() {
+    const result = Object.create(null);
+    for (const key of this.keys()) {
+      result[key] = this.get(key);
+    }
+    return result;
+  }
 }
 
 module.exports = MapOfValueKeys;

@@ -130,3 +130,11 @@ test("basic", t => {
   t.deepEqual(mapOfValueKeys.has(duplicateKeyButNeverAdded), false);
   t.deepEqual(mapOfValueKeys.get(duplicateKeyButNeverAdded), undefined);
 });
+
+test("json", t => {
+  const mapOfValueKeys = new MapOfValueKeys();
+
+  mapOfValueKeys.set("key", "value");
+
+  t.deepEqual(mapOfValueKeys.jsonObj(), { key: "value" });
+});
