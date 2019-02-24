@@ -1,6 +1,6 @@
 {
   "name": "map-of-value-keys",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "subclass of Map that supports Objects as keys",
   "license": "MIT",
   "main": "map-of-value-keys.js",
